@@ -106,7 +106,12 @@
     right: 8px !important;
     z-index: 9999;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
-    @apply block lg:hidden;
+  }
+
+  @media (min-width: 1024px) {
+    .call-btn {
+      display: none !important;
+    }
   }
 
   .btn-outline {
