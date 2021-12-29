@@ -33,12 +33,12 @@ const PageTemplate = function (props) {
 
   const sanity = data.page;
 
-  const { siteSEO, primary, secondary, accent, neutral, hero } = useSanity();
+  const { settings, info } = useSanity();
 
   const pageSEO = {
     title: sanity.metadata.title,
     description: sanity.metadata.description,
-    slug: `${siteSEO.url}/${sanity.metadata.slug.current}/`,
+    slug: `${info.websiteUrl}/${sanity.metadata.slug.current}/`,
     schema: sanity?.metadata?.schema?.code,
   };
 
@@ -55,7 +55,7 @@ const PageTemplate = function (props) {
         <meta
           name="robots"
           content={
-            siteSEO.isIndexed === false
+            settings.isIndexed === false
               ? 'noindex, nofollow'
               : sanity.metadata.isIndexed === true
               ? 'index, follow'

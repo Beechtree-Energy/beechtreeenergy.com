@@ -31,12 +31,12 @@ const LocationsTemplate = (props) => {
 
   const sanity = data.page;
 
-  const { primary, secondary, accent, neutral, hero } = useSanity();
+  const { settings, info } = useSanity();
 
   const seo = {
     title: sanity.metadata.title,
     description: sanity.metadata.description,
-    slug: `${website.url}/${sanity.metadata.slug.current}/`,
+    slug: `${info.websiteUrl}/${sanity.metadata.slug.current}/`,
     schema: sanity.metadata.schema.code,
   };
 

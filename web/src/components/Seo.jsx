@@ -6,16 +6,15 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { useSanity } from '../hooks';
 
 const SEO = ({ lang, title, description, canonical, image, children }) => {
-  const { siteSEO, metadata, primary, secondary, accent, neutral, hero } =
-    useSanity();
-  const metaDescription = description || siteSEO.description;
+  const { settings, info } = useSanity();
+  const metaDescription = description || settings.description;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={`${title} | ${siteSEO.name}`}
+      title={`${title} | ${settings.name}`}
     >
       <link
         rel="canonical"
@@ -29,22 +28,22 @@ const SEO = ({ lang, title, description, canonical, image, children }) => {
       <meta
         name="robots"
         content={
-          siteSEO.isIndexed === true ? 'index, follow' : 'noindex, nofollow'
+          settings.isIndexed === true ? 'index, follow' : 'noindex, nofollow'
         }
       />
 
       <meta name="description" content={metaDescription} />
       {/* Open Graph tags */}
-      <meta property="og:title" content={siteSEO.title} />
+      <meta property="og:title" content={settings.title} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:image" content={siteSEO.image} />
+      <meta property="og:image" content={settings.image} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={siteSEO.url} />
-      <meta property="og:site_name" content={siteSEO.title} />
+      <meta property="og:url" content={info.websiteUrl} />
+      <meta property="og:site_name" content={settings.title} />
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={siteSEO.author} />
-      <meta name="twitter:title" content={siteSEO.title} />
+      <meta name="twitter:creator" content={settings.author} />
+      <meta name="twitter:title" content={settings.title} />
       <meta name="twitter:description" content={metaDescription} />
       {children}
     </Helmet>

@@ -10,7 +10,7 @@ const FooterLinks = () => {
   const {
     logo,
     footers,
-    siteSEO,
+    settings,
     primary,
     secondary,
     accent,
@@ -50,7 +50,7 @@ const FooterLinks = () => {
             <div className="mx-auto text-center">
               <GatsbyImage
                 image={logo.footer?.asset?.gatsbyImageData}
-                alt={`${siteSEO.name} company logo`}
+                alt={`${settings.name} company logo`}
                 loading="lazy"
                 className="w-56 transition hover:scale-110"
               />

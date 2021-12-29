@@ -89,7 +89,7 @@ const StyledDropdownLabelChevron = styled.svg`
 
 const NavbarPrimary = () => {
   const {
-    siteSEO,
+    settings,
     logo,
     navbars,
     primary,
@@ -183,7 +183,7 @@ const NavbarPrimary = () => {
                       <Link to="/">
                         <GatsbyImage
                           image={logo.navbar?.asset?.gatsbyImageData}
-                          alt={`${siteSEO?.name} company logo`}
+                          alt={`${settings?.name} company logo`}
                           loading="eager"
                           className="transition hover:scale-110"
                         />

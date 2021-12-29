@@ -3,13 +3,12 @@ import Tabs from 'sanity-plugin-tabs';
 
 export default {
   title: 'SEO',
-  name: 'businessSeo',
+  name: 'businessSettings',
   type: 'document',
   inputComponent: Tabs,
   icon,
   fieldsets: [
     { title: 'Indexing', name: 'indexingSet' },
-    { title: 'Domain', name: 'domainSet' },
     { title: 'Metadata', name: 'metadataSet' },
   ],
   fields: [
@@ -20,25 +19,6 @@ export default {
       type: 'boolean',
       initialValue: false,
       fieldset: 'indexingSet',
-    },
-    {
-      title: 'Business Name',
-      description: 'Exactly as written on Google Business Profile',
-      name: 'name',
-      type: 'string',
-      fieldset: 'domainSet',
-    },
-    {
-      title: 'Business URL',
-      description:
-        'Enter full domain URL (no "/" at the end). Example: "https://johngrattan.com"',
-      name: 'url',
-      type: 'url',
-      validation: (Rule) =>
-        Rule.uri({
-          scheme: ['http', 'https'],
-        }),
-      fieldset: 'domainSet',
     },
     {
       title: 'Title',

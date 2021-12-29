@@ -4,10 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 const useSanitySettings = () => {
   const data = useStaticQuery(graphql`
     query useSanitySettingsQ {
-      sanityBusinessSeo {
+      sanityBusinessSettings {
         isIndexed
-        name
-        url
         title
         description
         author
@@ -255,7 +253,7 @@ const useSanitySettings = () => {
   const neutral = data.sanityColorsNeutral;
   const primary = data.sanityColorsPrimary;
   const secondary = data.sanityColorsSecondary;
-  const siteSEO = data.sanityBusinessSeo;
+  const settings = data.sanityBusinessSettings;
   const socials = data.allSanitySocial.nodes;
 
   return {
@@ -272,7 +270,7 @@ const useSanitySettings = () => {
     neutral,
     primary,
     secondary,
-    siteSEO,
+    settings,
     socials,
   };
 };

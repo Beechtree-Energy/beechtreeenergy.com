@@ -37,8 +37,8 @@ export default () =>
                 .child(
                   S.document()
                     .title('Sitewide Settings')
-                    .schemaType('businessSeo')
-                    .documentId('businessSeo')
+                    .schemaType('businessSettings')
+                    .documentId('businessSettings')
                 ),
               S.listItem()
                 .title('General Information')
@@ -204,7 +204,7 @@ export default () =>
           ![
             'businessInfo',
             'businessLogo',
-            'businessSeo',
+            'businessSettings',
             'colorsAccent',
             'colorsHero',
             'colorsNeutral',

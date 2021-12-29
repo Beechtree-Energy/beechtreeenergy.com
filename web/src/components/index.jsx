@@ -3,6 +3,7 @@ export { default as Benefits } from './Benefits';
 export { default as BenefitsHome } from './views/home/BenefitsHome';
 export { default as BenefitsIcons } from './BenefitsIcons';
 export { default as Button } from './Button';
+export { default as CallBtn } from './CallBtn';
 export { default as CallOutHome } from './views/home/CallOutHome';
 export { default as Card } from './Card';
 export { default as CardFooter } from './CardFooter';

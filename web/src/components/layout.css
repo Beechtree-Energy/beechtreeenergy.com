@@ -100,6 +100,21 @@
     list-style: none;
   }
 
+  .call-btn {
+    position: fixed;
+    bottom: 14px;
+    right: 8px;
+    z-index: 9999;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+    @apply block lg:hidden;
+  }
+
+  .btn-outline {
+    /* color: transparent !important; */
+    outline-style: hidden !important;
+    -webkit-text-stroke-width: 2px;
+  }
+
   /* .list-check > ul > li {
     padding: 0.3em 0 1em 40px;
     background-image: url('web/src/assets/graphics/check.png') no-repeat;

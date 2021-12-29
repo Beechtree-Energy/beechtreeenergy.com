@@ -57,6 +57,7 @@ export default {
           { title: 'Twitter', value: 'twitter' },
           { title: 'Vimeo', value: 'vimeo' },
           { title: 'WhatsApp', value: 'whatsapp-square' },
+          { title: 'Yelp', value: 'yelp' },
           { title: 'YouTube', value: 'youtube' },
         ],
         layout: 'dropdown',

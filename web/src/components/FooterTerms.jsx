@@ -4,7 +4,7 @@ import { Section, Container, AnchorText } from '.';
 import { useSanity } from '../hooks';
 
 const FooterTerms = () => {
-  const { siteSEO, primary, secondary, accent, neutral, hero, info } =
+  const { settings, primary, secondary, accent, neutral, hero, info } =
     useSanity();
 
   return (
@@ -15,7 +15,7 @@ const FooterTerms = () => {
     >
       <Container padding="sm">
         <p className="text-base text-zinc-200 text-center">
-          © {new Date().getFullYear()} {siteSEO.name}, All Rights Reserved
+          © {new Date().getFullYear()} {settings.name}, All Rights Reserved
           {` `}
         </p>
         <p className="text-sm text-zinc-200 text-center">

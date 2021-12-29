@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { useSanity } from '../hooks';
-import { Footer, Header } from '.';
+import { Footer, Header, CallBtn } from '.';
 import './layout.css';
 
 const GlobalStyles = styled.div`
@@ -52,6 +52,7 @@ const Layout = function ({ pageType, children }) {
           >
             <main>{children}</main>
           </GlobalStyles>
+          <CallBtn />
           <Footer />
         </div>
       );
@@ -70,6 +71,7 @@ const Layout = function ({ pageType, children }) {
           >
             <main>{children}</main>
           </GlobalStyles>
+          <CallBtn />
           <Footer />
         </div>
       );
@@ -88,6 +90,7 @@ const Layout = function ({ pageType, children }) {
           >
             <main>{children}</main>
           </GlobalStyles>
+          <CallBtn />
           <Footer />
         </div>
       );
@@ -106,6 +109,7 @@ const Layout = function ({ pageType, children }) {
           >
             <main>{children}</main>
           </GlobalStyles>
+          <CallBtn />
           <Footer />
         </div>
       );
@@ -124,6 +128,7 @@ const Layout = function ({ pageType, children }) {
           >
             <main>{children}</main>
           </GlobalStyles>
+          <CallBtn />
           <Footer />
         </div>
       );
