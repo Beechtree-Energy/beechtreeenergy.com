@@ -101,9 +101,9 @@
   }
 
   .call-btn {
-    position: fixed;
-    bottom: 14px;
-    right: 8px;
+    position: fixed !important;
+    bottom: 14px !important;
+    right: 8px !important;
     z-index: 9999;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
     @apply block lg:hidden;
