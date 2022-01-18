@@ -45,3 +45,23 @@
     X-XSS-Protection = "1; mode=block"
     # Content-Security-Policy = "default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; cloudfront.net *.cloudfront.net; netlify.com *.netlify.com; google-analytics.com *.google-analytics.com; googletagmanager.com *.googletagmanager.com; sanity.io *sanity.io; fontawesome.com *.fontawesome.com"
 #   Permissions-Policy = "interest-cohort=()"
+
+[[redirects]]
+  from = "/duct-leakage-testing/"
+  to = "/hvac-duct-leakage-testing/"
+  status = 301
+
+[[redirects]]
+  from = "/blower-door-testing/"
+  to = "/hvac-duct-leakage-testing/"
+  status = 301
+
+[[redirects]]
+  from = "/manual-j-report/"
+  to = "/hvac-system-design/"
+  status = 301
+
+[[redirects]]
+  from = "/masssave-ac-check/"
+  to = "/mass-save-hvac-measurequick-ac-check/"
+  status = 301
